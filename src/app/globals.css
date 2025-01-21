@@ -1,0 +1,181 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border font-karla scroll-smooth;
+  }
+
+  body {
+    @apply bg-[#242628] text-foreground;
+  }
+
+  .bg_hero {
+    background: linear-gradient(rgba(1, 1, 1, 0.8), rgba(1, 1, 1, 0.8));
+    /* background-image: linear-gradient(rgba(1, 1, 1, 0.4), rgba(1, 1, 1, 0.4)),
+      url("/images/bghero2.jpg"); */
+    /* background-size: cover;
+    background-position: top; */
+  }
+
+  .sidebar {
+    -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  .filter_blur {
+    filter: blur(120px);
+  }
+
+  .filter_blur2 {
+    filter: blur(200px);
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, rgba(253, 200, 48, 1) 30%, rgba(243, 115, 53, 1) 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .text-gradient2 {
+    background: linear-gradient(180deg, rgba(251, 215, 134, 1) 0%, rgba(247, 121, 125, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  .bg_glass {
+    background: rgba(255, 255, 255, 0.20);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .bg_glass2 {
+    background: rgba(255, 255, 255, 0.10);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .bg_gradient {
+    background: linear-gradient(180deg, rgba(230, 92, 0, 1) 0%, rgba(37, 37, 38, 1) 100%);
+  }
+
+  .bg_gradient2 {
+    background: rgb(255, 135, 55);
+    background: linear-gradient(165deg, rgba(255, 135, 55, 1) 40%, rgba(37, 37, 38, 0.5) 100%);
+  }
+
+  .bg_gradient3 {
+    background: linear-gradient(180deg, rgba(254, 89, 0, 1) 50%, rgba(249, 212, 35, 1) 100%);
+  }
+
+  .bg_gradient4 {
+    background: linear-gradient(90deg, rgba(254, 89, 0, 1) 50%, rgba(249, 212, 35, 1) 100%);
+  }
+
+  .orange_shadow {
+    filter: drop-shadow(0px 0px 30px #fe5900);
+  }
+
+  .blx_shadow {
+    filter: drop-shadow(30px 30px 30px #000000A3);
+  }
+
+  .blx_shadow2 {
+    filter: drop-shadow(10px 50px 20px #000000A3);
+  }
+
+  @-webkit-keyframes slide-top {
+    0% {
+      -webkit-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+
+    100% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .animate-rotate {
+    animation: rotate 20s linear infinite;
+    /* Adjust the duration for slower or faster rotation */
+  }
+
+  @keyframes bounce {
+
+    0%,
+    100% {
+      transform: translateY(0);
+      /* Original position */
+    }
+
+    50% {
+      transform: translateY(-15px);
+      /* Move up by 20px */
+    }
+  }
+
+  .bounce-animation {
+    animation: bounce 2s infinite;
+    /* 2s duration, infinite loop */
+  }
+
+
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 10px solid rgb(254, 89, 0);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: gray;
+  }
+
+  @media (max-width: 640px) {
+    .bg_hero {
+      background-image: linear-gradient(rgba(1, 1, 1, 0.3), rgba(1, 1, 1, 0.3)),
+        url("/images/bgheromob.jpg");
+      background-size: cover;
+      background-position-x: right;
+    }
+  }
+
+}
