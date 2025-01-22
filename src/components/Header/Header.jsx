@@ -59,7 +59,7 @@ const Header = () => {
                 <Button variant="default">Whitepaper</Button>
             </header>
 
-            <header className="flex p-4 relative items-center justify-between lg:hidden">
+            <header className="flex w-[95%] mx-auto py-4 relative items-center justify-between lg:hidden">
                 {/* <div className="bg-custom-orange h-[70px] z-[-1] filter_blur rounded-[10px] w-[80%] absolute inset-x-[10%]" /> */}
                 <Logo src="/images/logo.png" alt="logo" width={70} height={70} onClick={scrollToTop} />
                 <button className='flex-1 flex justify-end' onClick={() => setToggle(true)}>
