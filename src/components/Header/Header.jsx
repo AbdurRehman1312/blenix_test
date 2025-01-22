@@ -70,7 +70,7 @@ const Header = () => {
             {toggle && (
                 <div className='fixed sidebar lg:hidden top-0 z-50 left-0 w-[80%] h-full bg-opacity-50 flex justify-center items-center'>
                     <div className='bg-dark-gray h-screen w-full px-5 py-5'>
-                        <div className="flex justify-between my-5">
+                        <div className="flex justify-between my-6">
                             <Logo src="/images/logo.png" alt="logo" width={70} height={70} />
                             <button onClick={() => setToggle(false)}>
                                 <Image src="/icons/close.png" alt="Close Icon" width={30} height={30} />
