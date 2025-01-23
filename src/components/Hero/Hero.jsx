@@ -41,9 +41,9 @@ const Hero = ({ currentPage }) => {
                 <div className="bg-custom-orange lg:block hidden h-[70px] z-[-1] filter_blur rounded-[10px] w-[35%] absolute right-[-12%]" />
                 <div className="bg-custom-orange md:hidden h-[70px] z-[-1] filter_blur rounded-[10px] w-[35%] absolute top-40 right-[-12%]" />
                 <div className="w-full md:w-[60%] flex flex-col gap-y-6 lg:pl-28 xl:pl-40 md:pt-0 pt-60" ref={sectionRef}>
-                    <h1 className="text-3xl lg:text-5xl font-medium text-gradient">Unleash the Power of Blockchain for a Sustainable Future</h1>
-                    <p className="text-white/75 font-semibold md:text-lg">Blenix blends cutting-edge blockchain technology with sustainability-driven solutions—because meaningful change demands strong foundation.</p>
-                    <p className="text-white text-lg lg:text-xl font-semibold">Own the future - Join our presale waitlist today!</p>
+                    <h1 className="text-4xl lg:text-5xl font-medium text-gradient">Unleash the Power of Blockchain for a Sustainable Future</h1>
+                    <p className="text-white/75 font-semibold text-lg">Blenix blends cutting-edge blockchain technology with sustainability-driven solutions—because meaningful change demands strong foundation.</p>
+                    <p className="text-white text-xl font-semibold">Own the future - Join our presale waitlist today!</p>
                     <Button variant="outline" onClick={handleScroll} className="w-[50%] lg:w-[30%]">
                         Get Started
                     </Button>
