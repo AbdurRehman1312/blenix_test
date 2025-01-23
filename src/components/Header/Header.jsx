@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 
 const NavLink = ({ href, children, onClick, disabled }) => {
     return (
@@ -24,22 +23,12 @@ const Logo = ({ src, width, height, alt, onClick }) => (
 
 const Header = () => {
     const [toggle, setToggle] = useState(false);
-    const pathname = usePathname();
-    const isBlxTokenRoute = pathname === "/blx-token";
     const scrollToTop = () => window.scrollTo({ top: 0 });
-
-    const handleWaitlistScroll = () => {
-        const waitlistSection = document.getElementById("waitlist");
-        if (waitlistSection) {
-            waitlistSection.scrollIntoView({ behavior: "smooth" });
-        }
-        setToggle(false)
-    };
 
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "BLX Token", href: "/blx-token", disabled: false },
-        { name: "Join Waitlist", href: isBlxTokenRoute ? "/" : "#waitlist", onClick: handleWaitlistScroll },
+        { name: "Join Waitlist", href: "#waitlist" },
     ].map(({ name, href, disabled, onClick }) => (
         <NavLink href={href} key={name} disabled={disabled} onClick={() => { setToggle(false); if (onClick) onClick(); }}>
             {name}

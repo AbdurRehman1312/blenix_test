@@ -30,17 +30,23 @@ const BlxTokenHero = ({ currentPage }) => {
             setLoaded(true);
         }
     }, [currentPage]);
+    const handleScroll = () => {
+        const waitlistSection = document.getElementById("waitlist");
+        if (waitlistSection) {
+            waitlistSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <section className='flex justify-between md:flex-row flex-col items-center gap-y-6 min-h-[60vh] py-6 w-[95%] lg:w-[80%] mx-auto'>
             <div className="flex flex-col w-full md:w-[50%]" ref={sectionRef}>
                 <h1 className="text-2xl lg:text-4xl text-white font-medium">Your Gateway to Empowering the Future</h1>
                 <p className="text-white/75 md:text-lg my-5">Secure your stake in BLX, the utility token driving innovation, transparency, and accountability. Invest in Blenix today and join a movement built on progress and meaningful impact.</p>
                 <div className="flex items-center gap-5 md:flex-row flex-col">
-                    <Button variant="destructive" className="flex items-center gap-x-3 md:w-auto w-full">
+                    <Button variant="destructive" className="flex items-center gap-x-3 md:w-auto w-full" onClick={handleScroll}>
                         <span>Claim Your Spot in the Presale</span>
                         <ChevronRight className='text-custom-orange' />
                     </Button>
-                    <Button variant="secondary" className="flex items-center gap-x-3 md:w-auto w-full">
+                    <Button variant="secondary" className="flex items-center gap-x-3 md:w-auto w-full" onClick={handleScroll}>
                         <span>Learn More About BLX</span>
                         <ChevronRight className='text-custom-orange' />
                     </Button>

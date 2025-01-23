@@ -31,6 +31,12 @@ const BackedBy = () => {
             animateText(textSectionRef.current.children, false);
         }
     }, [textIntersection]);
+    const handleScroll = () => {
+        const waitlistSection = document.getElementById("waitlist");
+        if (waitlistSection) {
+            waitlistSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <section className='w-[95%] lg:w-[80%] mx-auto relative py-20'>
             <div className="bg-custom-orange h-[100px] w-[100px] lg:h-[280px] lg:w-[280px] z-[-1] filter_blur2 rounded-full absolute left-[37%] top-[50%]" />
@@ -76,7 +82,7 @@ const BackedBy = () => {
                 </div>
             </div>
             <div className="flex justify-center items-center mt-8">
-                <Button variant="destructive" className="flex items-center gap-x-3 md:w-auto w-full">
+                <Button variant="destructive" className="flex items-center gap-x-3 md:w-auto w-full" onClick={handleScroll}>
                     <span>Reserve Your Spot Today</span>
                     <ChevronRight className='text-custom-orange' />
                 </Button>

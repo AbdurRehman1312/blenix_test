@@ -50,6 +50,12 @@ const BlenixSmartChoice = () => {
             fadeOut();
         }
     }, [intersection]);
+    const handleScroll = () => {
+        const waitlistSection = document.getElementById("waitlist");
+        if (waitlistSection) {
+            waitlistSection.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <section className='w-[95%] lg:w-[80%] mx-auto my-20'>
             <div className="flex items-start justify-between lg:flex-row flex-col gap-y-7">
@@ -88,7 +94,7 @@ const BlenixSmartChoice = () => {
                                 <span className="text-white/60 text-sm">100,000$</span>
                             </div>
                         </div>
-                        <Button variant="destructive" className="flex items-center gap-x-3 md:w-auto w-full">
+                        <Button variant="destructive" className="flex items-center gap-x-3 md:w-auto w-full" onClick={handleScroll}>
                             <span>Claim Your Spot</span>
                             <ChevronRight className='text-custom-orange' />
                         </Button>
