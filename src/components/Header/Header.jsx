@@ -45,7 +45,9 @@ const Header = () => {
                     {/* <div className="bg-custom-orange h-[70px] z-[-1] filter_blur rounded-[10px] w-[80%] absolute inset-x-[10%]" /> */}
                     {navLinks}
                 </div>
-                <Button variant="default">Whitepaper</Button>
+                <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer" download="Whitepaper.pdf">
+                    <Button variant="default">Whitepaper</Button>
+                </a>
             </header>
 
             <header className="flex w-[95%] mx-auto py-4 relative items-center justify-between lg:hidden">
@@ -69,7 +71,9 @@ const Header = () => {
                             {navLinks}
                         </div>
                         <div className="flex justify-center mt-7">
-                            <Button variant="default">Whitepaper</Button>
+                            <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer" download="Whitepaper.pdf">
+                                <Button variant="default">Whitepaper</Button>
+                            </a>
                         </div>
                     </div>
                 </div>

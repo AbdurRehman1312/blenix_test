@@ -46,10 +46,12 @@ const BlxTokenHero = ({ currentPage }) => {
                         <span>Claim Your Spot in the Presale</span>
                         <ChevronRight className='text-custom-orange' />
                     </Button>
-                    <Button variant="secondary" className="flex items-center gap-x-3 md:w-auto w-full" onClick={handleScroll}>
-                        <span>Learn More About BLX</span>
-                        <ChevronRight className='text-custom-orange' />
-                    </Button>
+                    <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer" download="Whitepaper.pdf">
+                        <Button variant="secondary" className="flex items-center gap-x-3 md:w-auto w-full">
+                            <span>Learn More About BLX</span>
+                            <ChevronRight className='text-custom-orange' />
+                        </Button>
+                    </a>
                 </div>
             </div>
             <div className="flex flex-col w-full md:w-[40%] items-end">
