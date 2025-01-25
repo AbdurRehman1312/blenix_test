@@ -92,8 +92,8 @@ const BlenixEcosystem = () => {
                                 <Image
                                     src={section.imgSrc}
                                     alt={section.title}
-                                    width={`${section.wideImage ? 500 : 350}`}
-                                    height={`${section.wideImage ? 500 : 350}`}
+                                    width={`${section.wideImage ? 500 : 270}`}
+                                    height={`${section.wideImage ? 500 : 270}`}
                                     className={`${section.wideImage ? 'w-[90%]' : ''} orange_shadow2 mt-5`}
                                 />
                             </div>
