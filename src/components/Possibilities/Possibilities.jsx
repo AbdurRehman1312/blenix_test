@@ -151,7 +151,7 @@ const Possibilities = () => {
             </section>
             <section className="bg_gradient relative overflow-hidden flex justify-center items-center md:flex-row flex-col-reverse gap-y-10 py-28">
                 <div className="bg_gradient2 rounded-full w-[130px] h-[130px] absolute right-[-20%] lg:right-[-4%] inset-y-[20%]" />
-                <div className="w-[95%] lg:w-[40%] relative flex justify-start">
+                <div className="w-[95%] lg:w-[40%] relative flex justify-center md:justify-start">
                     <Image src="/images/bitcoinshield.png" alt="1" width={350} height={350} className='z-10 blx_shadow' />
                     <div className="bg_gradient2 rounded-full w-[130px] h-[130px] absolute inset-x-[4%] bottom-[4%] bounce-animation" />
                 </div>

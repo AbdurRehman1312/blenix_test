@@ -82,7 +82,7 @@ const Blx = () => {
         };
     }, []);
     return (
-        <section className='w-[95%] lg:w-[80%] mx-auto my-10 bg_glass rounded-[40px] px-5 py-10 lg:p-10 flex justify-between items-center md:flex-row flex-col-reverse gap-y-10 overflow-hidden'>
+        <section className='w-[95%] lg:w-[80%] mx-auto mt-16 mb-10 bg_glass rounded-[40px] px-5 py-10 lg:p-10 flex justify-between items-center md:flex-row flex-col-reverse gap-y-10 overflow-hidden'>
             <div className="w-full md:w-[45%]">
                 <Image src="/images/blx.png" alt="BLX" width={400} height={400} className='blx_shadow' style={{ opacity: 0, transition: "opacity 0.5s ease-in-out" }} ref={imageRef} />
             </div>

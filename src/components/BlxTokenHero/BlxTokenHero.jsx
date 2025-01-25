@@ -42,12 +42,12 @@ const BlxTokenHero = ({ currentPage }) => {
                 <h1 className="text-2xl lg:text-4xl text-white font-medium">Your Gateway to Empowering the Future</h1>
                 <p className="text-white/75 md:text-lg my-5">Secure your stake in BLX, the utility token driving innovation, transparency, and accountability. Invest in Blenix today and join a movement built on progress and meaningful impact.</p>
                 <div className="flex items-center gap-5 md:flex-row flex-col">
-                    <Button variant="destructive" className="flex items-center gap-x-3 md:w-auto w-full" onClick={handleScroll}>
+                    <Button variant="destructive" className="flex items-center gap-x-3 lg:w-full xl:w-[40%] w-full" onClick={handleScroll}>
                         <span>Claim Your Spot in the Presale</span>
                         <ChevronRight className='text-custom-orange' />
                     </Button>
-                    <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer" download="Whitepaper.pdf">
-                        <Button variant="secondary" className="flex items-center gap-x-3 md:w-auto w-full">
+                    <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer" download="Whitepaper.pdf" className='lg:w-full xl:w-[40%] w-full'>
+                        <Button variant="secondary" className="flex items-center gap-x-3 w-full">
                             <span>Learn More About BLX</span>
                             <ChevronRight className='text-custom-orange' />
                         </Button>
