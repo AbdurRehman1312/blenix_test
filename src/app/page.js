@@ -1,3 +1,4 @@
+import BlenixEcosystem from "@/components/BlenixEcosystem/BlenixEcosystem";
 import BlockchainRevolution from "@/components/BlockchainRevolution/BlockchainRevolution";
 import Blx from "@/components/Blx/Blx";
 import { Faqs } from "@/components/Faqs/Faqs";
@@ -17,6 +18,7 @@ export default function Home() {
       <BlockchainRevolution />
       <WhyBlenix />
       <Possibilities />
+      <BlenixEcosystem />
       <Workflow />
       <Blx />
       <Faqs />
