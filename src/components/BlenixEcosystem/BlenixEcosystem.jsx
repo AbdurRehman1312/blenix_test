@@ -33,7 +33,7 @@ const BlenixEcosystem = () => {
                         Meets
                         Real-World Mining
                     </h1>
-                    <div className="rounded-xl min-h-[45vh] max-w-[2px] relative mt-5 md:block hidden" style={{
+                    {/* <div className="rounded-xl min-h-[45vh] max-w-[2px] relative mt-5 md:block hidden" style={{
                         background: `linear-gradient(to bottom, rgba(254, 89, 0,0.4) 0%, rgba(254, 89, 0, 0.4) ${cutOffPoint}%, rgba(69, 69, 70, 1) ${cutOffPoint}%, rgba(69, 69, 70, 1) 40%)`
                     }}>
                         {sections.map((section, index) => (
@@ -44,14 +44,14 @@ const BlenixEcosystem = () => {
                                 key={index}
                             ></div>
                         ))}
-                    </div>
-                    <div className="rounded-xl w-full min-h-[2px] relative mt-10 md:hidden block" style={{
+                    </div> */}
+                    <div className="rounded-xl w-full min-h-[3px] relative mt-10" style={{
                         background: `linear-gradient(to right, rgba(254, 89, 0,0.4) 0%, rgba(254, 89, 0, 0.4) ${cutOffPoint}%, rgba(44, 44, 44, 0.4) ${cutOffPoint}%, rgba(44, 44, 44, 0.4) 40%)`
                     }}>
                         {sections.map((section, index) => (
                             <div
                                 className={`bg-${index <= activeIndex ? 'custom-orange orange_shadow2' : 'dark-gray'} w-[13px] h-[13px] rounded-full absolute`}
-                                style={{ left: `${12.5 * index}%`, insetBlock: "-250%", cursor: 'pointer' }}
+                                style={{ left: `${12.5 * index}%`, insetBlock: "-170%", cursor: 'pointer' }}
                                 onClick={() => setActiveIndex(index)}
                                 key={index}
                             ></div>

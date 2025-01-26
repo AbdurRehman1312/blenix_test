@@ -32,7 +32,7 @@ const sections = [
     },
     {
         title: "CROSS-CHAIN BRIDGE",
-        imgSrc: "/images/dex.png",
+        imgSrc: "/images/crosschain.png",
         description: `A powerful cross-chain bridge that
 enables seamless asset transfers
 across different blockchain networks.
@@ -44,7 +44,7 @@ blockchain ecosystem.`
     },
     {
         title: "FARMING & STAKING PLATFORM",
-        imgSrc: "/images/dex.png",
+        imgSrc: "/images/farming.png",
         description: `A dynamic staking and liquidity
 platform that features configurable
 lock-in periods and reward structures.
@@ -55,7 +55,7 @@ growth within Blenix network.`
     },
     {
         title: "LAUNCHPAD",
-        imgSrc: "/images/dex.png",
+        imgSrc: "/images/launchpad.png",
         description: `A launchpad platform designed to fuel
 the growth of new blockchain projects.
 It enables seamless token fundraising
@@ -68,7 +68,7 @@ long-term success.`
     },
     {
         title: "CENTRALIZED EXCHANGE",
-        imgSrc: "/images/dex.png",
+        imgSrc: "/images/exchange.png",
         description: `A fully licensed & regulated centralized
 exchange, ensuring secure, compliant,
 and efficient trading for users.
