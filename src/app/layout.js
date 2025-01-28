@@ -3,16 +3,14 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
-  title: "Blenix",
-  description: "Unleash the Power of Blockchain for a Sustainable Future",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
     shortcut: ["/apple-touch-icon.png"],
   },
   openGraph: {
-    title: "Blenix",
-    description: "Unleash the Power of Blockchain for a Sustainable Future",
+    title: "BLENIX - Unleash the Power of Blockchain for a Sustainable Future",
+    description: "Blenix blends cutting-edge blockchain technology with sustainability-driven solutions",
     images: ["/oglogo.png"],
   },
 };
