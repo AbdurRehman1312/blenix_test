@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     title: "Blenix",
     description: "Unleash the Power of Blockchain for a Sustainable Future",
-    images: ["/images/logo.png"],
+    images: ["/images/logo2.png"],
   },
 };
 
