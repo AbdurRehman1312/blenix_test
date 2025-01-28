@@ -10,6 +10,11 @@ export const metadata = {
     apple: ["/apple-touch-icon.png?v=4"],
     shortcut: ["/apple-touch-icon.png"],
   },
+  openGraph: {
+    title: "Blenix",
+    description: "Unleash the Power of Blockchain for a Sustainable Future",
+    images: ["/images/logo.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
