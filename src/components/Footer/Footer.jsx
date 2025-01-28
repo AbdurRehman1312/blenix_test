@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
 
                 {/* Links Sections */}
-                <div className="flex justify-between gap-10 lg:gap-x-10 text-sm">
+                <div className="flex justify-between gap-10 lg:gap-x-20 text-sm">
                     {/* Quick Links */}
                     <div>
                         <h3 className="font-semibold text-lg mb-3">Quick Links</h3>
@@ -37,44 +37,18 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-
-                    {/* Testnet */}
-                    {/* <div>
-                        <h3 className="font-semibold text-lg mb-3">Testnet</h3>
-                        <ul className="space-y-2 text-white/70 mt-5">
-                            <li>
-                                <a href="/bridge" className="hover:text-gray-300">Bridge</a>
-                            </li>
-                            <li>
-                                <a href="/faucet" className="hover:text-gray-300">Faucet</a>
-                            </li>
-                            <li>
-                                <a href="/explorer" className="hover:text-gray-300">Explorer</a>
-                            </li>
-                            <li>
-                                <a href="/wufuswap" className="hover:text-gray-300">Wufuswap</a>
-                            </li>
-                        </ul>
-                    </div> */}
-
-                    {/* Community */}
-                    {/* <div>
-                        <h3 className="font-semibold text-lg mb-3">Community</h3>
-                        <ul className="space-y-2 text-white/70 mt-5">
-                            <li>
-                                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">Twitter</a>
-                            </li>
-                            <li>
-                                <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">Discord</a>
-                            </li>
-                            <li>
-                                <a href="https://zealy.io" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">Zealy</a>
-                            </li>
-                            <li>
-                                <a href="https://medium.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300">Medium</a>
-                            </li>
-                        </ul>
-                    </div> */}
+                    {/* Follow Us */}
+                    <div>
+                        <h3 className="font-semibold text-lg mb-3">Follow Us</h3>
+                        <div className="flex items-center gap-x-4">
+                            <a href="http://www.x.com/blxchain" target='_blank'>
+                                <Image src="/icons/x.png" alt="twitter" width={20} height={20} className='mt-3 opacity-70' />
+                            </a>
+                            <a href="https://t.me/blenixchain" target='_blank'>
+                                <Image src="/icons/tele.png" alt="twitter" width={20} height={20} className='mt-3 opacity-70' />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
