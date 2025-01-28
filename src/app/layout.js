@@ -4,7 +4,7 @@ import Footer from "@/components/Footer/Footer";
 
 export const metadata = {
   title: "Blenix",
-  description: "Blenix Blockchain Project",
+  description: "Unleash the Power of Blockchain for a Sustainable Future",
   icons: {
     icon: ["/favicon.ico?v=4"],
     apple: ["/apple-touch-icon.png?v=4"],
