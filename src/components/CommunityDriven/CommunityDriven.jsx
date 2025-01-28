@@ -54,7 +54,7 @@ const CommunityDriven = () => {
                 <p className="text-white/75 lg:text-lg font-light">Blenix is more than a blockchain—it’s a dynamic community where investors, developers, and enthusiasts come together to shape the future. With a vision to power thousands of decentralized applications, educate through upcoming Blenix Academy, and empower BLX holders with governance rights, we’re building an ecosystem designed for collaboration and meaningful impact.</p>
             </div>
             <div className="w-full md:w-[50%] flex justify-center lg:justify-end">
-                <Image src="/images/driven.png" alt="community" width={400} height={400} className='blx_shadow animate-pulse' />
+                <Image src="/images/driven.png" alt="community" width={500} height={500} className='blx_shadow animate-pulse' />
             </div>
         </div>
     )
