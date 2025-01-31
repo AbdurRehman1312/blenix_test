@@ -18,6 +18,9 @@ const Footer = () => {
                     <p className="text-sm text-gray-400 w-[70%] md:w-[60%]">
                         Empowering visionaries to build sustainable solutions that matter
                     </p>
+                    <p className="text-sm text-gray-400">
+                        Copyright &copy; 2025 Blenix Chain Technology INC. | All rights reserved.
+                    </p>
                 </div>
 
                 {/* Links Sections */}
