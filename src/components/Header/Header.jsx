@@ -48,7 +48,7 @@ const Header = () => {
 
     return (
         <>
-            <header className={` z-[20] fixed top-0 w-full ${isScrolled ? 'bg-dark-gray transition-all duration-500 ease-in-out' : ''}`}>
+            <header className={` z-[20] fixed top-0 w-full ${isScrolled ? 'bg_glass3 transition-all duration-500 ease-in-out' : ''}`}>
                 <div className="hidden z-[10] lg:flex justify-between items-center  py-3 w-full lg:w-[80%] mx-auto px-3 lg:px-0">
                     <div className="flex items-center gap-x-8">
                         <Logo src="/images/logo.png" alt="Logo" width={100} height={100} />
@@ -63,7 +63,7 @@ const Header = () => {
                 </div>
             </header>
 
-            <header className={`fixed top-0 w-full z-[30] ${isScrolled ? 'bg-dark-gray transition-all duration-300 ease-in-out' : ''} ${toggle ? 'hidden' : 'block'}`}>
+            <header className={`fixed top-0 w-full z-[30] ${isScrolled ? 'bg_glass3 transition-all duration-300 ease-in-out' : ''} ${toggle ? 'hidden' : 'block'}`}>
                 {/* <div className="bg-custom-orange h-[70px] z-[-1] filter_blur rounded-[10px] w-[80%] absolute inset-x-[10%]" /> */}
                 <div className="flex w-[95%] mx-auto py-4 relative items-center justify-between lg:hidden">
                     <Logo src="/images/logo.png" alt="logo" width={70} height={70} onClick={scrollToTop} />
