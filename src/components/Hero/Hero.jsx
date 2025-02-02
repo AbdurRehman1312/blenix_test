@@ -37,7 +37,7 @@ const Hero = ({ currentPage }) => {
 
     return (
         <>
-            <section className="relative min-h-[80vh] px-3 lg:px-0 flex md:flex-row flex-col-reverse gap-y-6 md:items-center md:justify-between overflow-hidden">
+            <section className="relative min-h-[80vh] mt-24 lg:mt-28 px-3 lg:px-0 flex md:flex-row flex-col-reverse gap-y-6 md:items-center md:justify-between overflow-hidden">
                 <div className="bg-custom-orange lg:block hidden h-[70px] z-[-1] filter_blur rounded-[10px] w-[35%] absolute right-[-12%]" />
                 <div className="bg-custom-orange md:hidden h-[70px] z-[-1] filter_blur rounded-[10px] w-[35%] absolute top-40 right-[-12%]" />
                 <div className="w-full md:w-[60%] flex flex-col gap-y-6 lg:pl-28 xl:pl-40 md:pt-0 pt-[236px]" ref={sectionRef}>
@@ -48,7 +48,7 @@ const Hero = ({ currentPage }) => {
                         Get Started
                     </Button>
                 </div>
-                <div className="w-full md:w-[40%] z-[20] flex justify-end">
+                <div className="w-full md:w-[40%] z-[10] flex justify-end">
                     <Image src="/images/herocircle.png" alt="Hero" width={255} height={255} className=' animate-rotate md:hidden absolute bottom-4 right-[-28%] top-0' />
                     <Image src="/images/herocircle.png" alt="Hero" width={500} height={500} className=' animate-rotate hidden md:block md:absolute md:bottom-4 md:right-[-28%] lg:bottom-4 xl:bottom-8 lg:right-[-18%] xl:right-[-12%]' />
                 </div>
