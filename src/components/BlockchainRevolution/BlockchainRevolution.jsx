@@ -56,7 +56,7 @@ const BlockchainRevolution = () => {
                     <p className="text-white/75 lg:text-lg font-light">At Blenix, we’re not here to follow the trends—we’re here to set a new standard. By seamlessly combining innovation and accountability, Blenix delivers a platform designed for impact and progress. <br /> <br />With a focus on transparency and trust, Blenix empowers creators and businesses to build meaningful solutions that matter. Whether it’s seamless interactions, reduced costs, or contributing to something greater, Blenix is your partner in shaping the future. <br /> <br /> It’s not just blockchain—it’s blockchain with purpose.</p>
                 </div>
                 <div className="w-full md:w-[50%] flex justify-center lg:justify-end">
-                    <Image src="/images/blxsmart.png" alt="community" width={400} height={400} className='blx_shadow animate-pulse' />
+                    <Image src="/images/coinbronze.png" alt="community" width={450} height={450} className='blx_shadow animate-pulse' />
                 </div>
             </div>
         </section>
