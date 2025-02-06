@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const NavLink = ({ href, children, onClick, disabled }) => {
     return (
@@ -24,6 +25,7 @@ const Logo = ({ src, width, height, alt, onClick }) => (
 const Header = () => {
     const [toggle, setToggle] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    const isPreSale = usePathname().includes("/presale");
     const scrollToTop = () => window.scrollTo({ top: 0 });
 
     useEffect(() => {
@@ -39,6 +41,7 @@ const Header = () => {
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "BLX Token", href: "/blx-token", disabled: false },
+        { name: "Presale", href: "/presale", disabled: false },
         { name: "Join Waitlist", href: "#waitlist" },
     ].map(({ name, href, disabled, onClick }) => (
         <NavLink href={href} key={name} disabled={disabled} onClick={() => { setToggle(false); if (onClick) onClick(); }}>
@@ -54,7 +57,9 @@ const Header = () => {
                         <Logo src="/images/logo.png" alt="Logo" width={100} height={100} />
                     </div>
                     <div className="lg:flex items-center gap-x-12 hidden">
-                        {/* <div className="bg-custom-orange h-[70px] z-[-1] filter_blur rounded-[10px] w-[80%] absolute inset-x-[10%]" /> */}
+                        {isPreSale && !isScrolled && (
+                            <div className="bg-custom-orange h-[50px] z-[-1] filter_blur rounded-[10px] w-[60%] absolute inset-x-[20%]" />
+                        )}
                         {navLinks}
                     </div>
                     <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer" download="Whitepaper.pdf">
