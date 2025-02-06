@@ -25,7 +25,8 @@ const Logo = ({ src, width, height, alt, onClick }) => (
 const Header = () => {
     const [toggle, setToggle] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const isPreSale = usePathname().includes("/presale");
+    const pathname = usePathname();
+    const isPreSale = ["/presale", "/about-us"].some(route => pathname.includes(route));
     const scrollToTop = () => window.scrollTo({ top: 0 });
 
     useEffect(() => {
@@ -42,6 +43,7 @@ const Header = () => {
         { name: "Home", href: "/" },
         { name: "BLX Token", href: "/blx-token", disabled: false },
         { name: "Presale", href: "/presale", disabled: false },
+        { name: "About Us", href: "/about-us", disabled: false },
         { name: "Join Waitlist", href: "#waitlist" },
     ].map(({ name, href, disabled, onClick }) => (
         <NavLink href={href} key={name} disabled={disabled} onClick={() => { setToggle(false); if (onClick) onClick(); }}>
