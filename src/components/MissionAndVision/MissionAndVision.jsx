@@ -49,7 +49,7 @@ const MissionAndVision = () => {
     }, [intersection]);
     return (
         <section className="w-[95%] lg:w-[70%] mx-auto relative py-10">
-            <div className="bg-custom-orange h-[100px] w-[100px] lg:h-[60px] lg:w-[900px] z-[-1] filter_blur2 rounded-full absolute left-[15%] top-[60%]" />
+            <div className="bg-custom-orange h-[100px] w-[100px] lg:h-[60px] lg:w-[900px] z-[-1] filter_blur2 rounded-full absolute left-[15%] top-[50%]" />
             <div className='flex justify-between md:flex-row flex-col gap-y-4 items-center mt-10'>
                 <div className="w-full md:w-[50%] space-y-8 overflow-x-hidden" ref={sectionRef}>
                     <h3 className="text-gradient lg:text-lg font-medium">Our Mission</h3>
