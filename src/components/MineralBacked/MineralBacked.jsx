@@ -52,7 +52,7 @@ const MineralBacked = () => {
                     </form>
                 </div>
                 <div className="w-full md:w-[45%] flex justify-center">
-                    <Image src="/images/blx2.png" alt="BLX" width={250} height={250} className='blx_shadow2 md:absolute md:bottom-2 bounce-animation md:scale-110 md:pb-10' />
+                    <Image src="/images/coinbronze.png" alt="BLX" width={370} height={370} className='blx_shadow2 md:absolute md:bottom-0 bounce-animation md:scale-110 md:pb-10' />
                 </div>
             </section>
         </>

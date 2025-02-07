@@ -4,7 +4,8 @@ const roadmapItems = [
         title: "Laying the Foundation",
         points: [
             "Launch of BLX utility token to power the ecosystem.",
-            "Deployment on the Ethereum network (ERC-20 standard)."
+            "Deployment on the Ethereum network (ERC-20 standard).",
+            "Initial deployment on BNB Smart Chain & Ethereum Network (BEP-20 & ERC-20)"
         ]
     },
     {

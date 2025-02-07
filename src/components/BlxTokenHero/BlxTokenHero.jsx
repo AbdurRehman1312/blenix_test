@@ -55,7 +55,7 @@ const BlxTokenHero = ({ currentPage }) => {
                 </div>
             </div>
             <div className="flex flex-col w-full md:w-[40%] items-end">
-                <Image src="/images/blxhero.gif" unoptimized alt="BLX Token" width={500} height={500} />
+                <Image src="/images/bronzeblx.gif" unoptimized alt="BLX Token" width={500} height={500} />
             </div>
         </section>
     )

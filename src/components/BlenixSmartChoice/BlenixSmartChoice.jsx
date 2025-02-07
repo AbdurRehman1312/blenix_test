@@ -113,7 +113,7 @@ const BlenixSmartChoice = () => {
                                 <h1 className="text-lg text-white">
                                     Amount Invested
                                 </h1>
-                                <p className="text-white/70 font-extralight text-sm">                                Easily adjust your investment amount and instantly see how many BLX tokens you’ll receive.</p>
+                                <p className="text-white/70 font-extralight text-sm">Easily adjust your investment amount and instantly see how many BLX tokens you’ll receive.</p>
                             </div>
                         </div>
                         <div className="p-5 min-h-[23vh] lg:min-h-[18vh] flex items-center gap-x-4 bg-dark-gray rounded-[20px]">
@@ -124,7 +124,7 @@ const BlenixSmartChoice = () => {
                                 <h1 className="text-lg text-white">
                                     Expected BLX Price
                                 </h1>
-                                <p className="text-white/70 font-extralight text-sm">                                Projected token value based on platform adoption and market growth.</p>
+                                <p className="text-white/70 font-extralight text-sm">Projected token value based on platform adoption and market growth.</p>
                             </div>
                         </div>
                         <div className="p-5 min-h-[23vh] lg:min-h-[18vh] flex items-center gap-x-4 bg-dark-gray rounded-[20px]">
@@ -146,7 +146,7 @@ const BlenixSmartChoice = () => {
                                 <h1 className="text-lg text-white">
                                     Calculation Time:
                                 </h1>
-                                <p className="text-white/70 font-extralight text-sm">                                Customize your timeline and see how your returns evolve with the market.</p>
+                                <p className="text-white/70 font-extralight text-sm">Customize your timeline and see how your returns evolve with the market.</p>
                             </div>
                         </div>
                     </div>
