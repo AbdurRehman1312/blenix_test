@@ -50,6 +50,13 @@
     background-clip: text;
     text-fill-color: transparent;
   }
+  .text-gradient3 {
+    background: linear-gradient(90deg, #F12711 0%, #F5AF19 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 
   .bg_glass {
     background: rgba(255, 255, 255, 0.20);
@@ -89,6 +96,26 @@
   .bg_gradient4 {
     background: linear-gradient(90deg, rgba(254, 89, 0, 1) 50%, rgba(249, 212, 35, 1) 100%);
   }
+
+  .bg_gradient5 {
+    background: linear-gradient(270deg, #FE5900 0%, #33373A 100%);
+  }
+  .bg_gradient6 {
+    background: linear-gradient(90deg, #FE5900 0%, #33373A 100%);
+  }
+
+  .bg_gradient7 {
+    background: linear-gradient(90deg, #242628 30%, #FD5A01 60% , #FB9E13 100%);
+  }
+  
+  .bg_gradient8 {
+    background: linear-gradient(270deg, #33373A 0%,  #98481D 50%, #33373A 100%);
+  }
+
+  .bg_gradient9 {
+    background: linear-gradient(270deg, #FD5A01 0%, #FB9E13 100%);
+  }
+
 
   .orange_shadow {
     filter: drop-shadow(0px 0px 30px rgb(254, 89, 0));
