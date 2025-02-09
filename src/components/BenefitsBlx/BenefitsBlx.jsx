@@ -72,7 +72,7 @@ export const BenefitsBlx = () => {
 
                         </div>
                         <div className="w-full lg:w-[48%] xl:w-[42%] min-h-[30vh] bg_gradient10 rounded-[40px] p-7 lg:p-10 relative overflow-hidden md:flex-row flex-col">
-                            <div className="absolute bottom-0 left-0 shrink-0 z-0">
+                            <div className=" w-[50%] md:w-auto absolute bottom-0 left-0 shrink-0 z-0">
                                 <Image src="/images/shieldcut.png" alt="1" width={300} height={300} />
                             </div>
                             <div className="flex flex-col justify-between h-full relative z-10">
