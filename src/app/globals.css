@@ -27,6 +27,10 @@
     animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   }
 
+  .no_scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
   .filter_blur {
     filter: blur(120px);
   }
@@ -34,6 +38,8 @@
   .filter_blur2 {
     filter: blur(200px);
   }
+
+  
 
   .text-gradient {
     background: linear-gradient(90deg, rgba(253, 200, 48, 1) 30%, rgba(243, 115, 53, 1) 60%);

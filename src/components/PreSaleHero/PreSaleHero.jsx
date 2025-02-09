@@ -47,13 +47,13 @@ const PreSaleHero = ({ currentPage }) => {
         }
     };
     return (
-        <section className='flex justify-between mt-24 lg:mt-44 md:flex-row flex-col items-stretch gap-y-6 min-h-[60vh] py-6 w-[95%] lg:w-[80%] mx-auto'>
+        <section className='flex justify-between mt-24 lg:mt-44 md:flex-row flex-col items-stretch gap-y-6 min-h-[60vh] py-6 w-[95%] lg:w-[85%] mx-auto'>
             <div className="flex flex-col items-center w-full md:w-[40%]" ref={sectionRef}>
                 <h1 className="text-2xl lg:text-4xl text-white font-medium">Shape the Future of Finance, Be DeFiant</h1>
                 <p className="text-white/75 md:text-lg my-5">Blinex empowers your investments with blockchain-backed, real-world assets.</p>
-                <Image src="/images/blx.png" alt="community" width={350} height={350} className='blx_shadow animate-pulse mt-10' />
+                <Image src="/images/blx.png" alt="community" width={350} height={350} className='blx_shadow animate-pulse mt-5 md:mt-20' />
             </div>
-            <div className="flex flex-col w-full md:w-[60%] xl:w-[55%] items-start bg-[#33373a] rounded-[40px] p-7">
+            <div className="flex flex-col w-full md:w-[55%] items-start bg-[#33373a] rounded-[40px] p-7">
                 <h1 className='text-white text-2xl lg:text-4xl text-center font-medium my-5'>Buy <span className='text-gradient3 '>$BLX</span> Token</h1>
                 <div className='flex justify-center w-[100%] mt-3 mb-1'>
                     <p className='text-white/45 text-sm md:text-md '>1 $BLX</p>
@@ -73,12 +73,12 @@ const PreSaleHero = ({ currentPage }) => {
 
                 <h1 className="text-xl mt-4 text-white ">You Deposit</h1>
 
-                <Tabs defaultValue="usdt" className="">
+                <Tabs defaultValue="usdt" className="w-full">
                     <TabsList>
-                        <TabsTrigger value="usdt"><Image src="/images/usdt.png" alt="community" width={24} height={24} className='me-1' /> ETH</TabsTrigger>
+                        <TabsTrigger value="usdt"><Image src="/images/usdt.png" alt="community" width={25} height={25} className='me-1' /> ETH</TabsTrigger>
                         <TabsTrigger value="usdc"><Image src="/images/usdc.png" alt="community" width={25} height={25} className='me-1' /> USDC</TabsTrigger>
-                        <TabsTrigger value="usdct"><Image src="/images/usdct.png" alt="community" width={23} height={23} className='me-1' /> USDCT</TabsTrigger>
-                        <TabsTrigger value="btc" className="me-0"><Image src="/images/btc.png" alt="community" width={26} height={26} className='me-1' /> BTC</TabsTrigger>
+                        <TabsTrigger value="usdct"><Image src="/images/usdct.png" alt="community" width={25} height={25} className='me-1' /> USDCT</TabsTrigger>
+                        <TabsTrigger value="btc" className="me-0"><Image src="/images/btc.png" alt="community" width={25} height={25} className='me-1' /> BTC</TabsTrigger>
                     </TabsList>
                     <TabsContent value="usdt">
                         <div className="flex items-center justify-between w-full   p-2 rounded-lg border border-[#595959] mt-7">
@@ -93,7 +93,7 @@ const PreSaleHero = ({ currentPage }) => {
                             />
                         </div>
                         
-                            <button className="bg-[#595959] w-[50%] md:w-[30%] xl:w-[25%] text-[#858688] px-5 py-1 rounded-lg text-sm md:text-md cursor-not-allowed">
+                            <button className="bg-[#595959] w-[50%] md:w-[50%] lg:w-[35%] xl:w-[25%] text-[#858688] px-5 py-2 rounded-lg text-sm md:text-md cursor-not-allowed">
                                 Max Amount
                             </button>
                         </div>
@@ -111,7 +111,7 @@ const PreSaleHero = ({ currentPage }) => {
                             />
                         </div>
                         
-                            <button className="bg-[#595959] w-[50%] md:w-[30%] xl:w-[25%] text-[#858688] px-5 py-1 rounded-lg text-sm md:text-md cursor-not-allowed">
+                            <button className="bg-[#595959] w-[50%] md:w-[50%] lg:w-[35%] xl:w-[25%] text-[#858688] px-5 py-2 rounded-lg text-sm md:text-md cursor-not-allowed">
                                 Max Amount
                             </button>
                         </div>
@@ -129,7 +129,7 @@ const PreSaleHero = ({ currentPage }) => {
                             />
                         </div>
                         
-                            <button className="bg-[#595959] w-[50%] md:w-[30%] xl:w-[25%] text-[#858688] px-5 py-1 rounded-lg text-sm md:text-md cursor-not-allowed">
+                            <button className="bg-[#595959] w-[50%] md:w-[50%] lg:w-[35%] xl:w-[25%] text-[#858688] px-5 py-2 rounded-lg text-sm md:text-md cursor-not-allowed">
                                 Max Amount
                             </button>
                         </div>
@@ -147,7 +147,7 @@ const PreSaleHero = ({ currentPage }) => {
                             />
                         </div>
                         
-                            <button className="bg-[#595959] w-[50%] md:w-[30%] xl:w-[25%] text-[#858688] px-5 py-1 rounded-lg text-sm md:text-md cursor-not-allowed">
+                            <button className="bg-[#595959] w-[50%] md:w-[50%] lg:w-[35%] xl:w-[25%] text-[#858688] px-5 py-2 rounded-lg text-sm md:text-md cursor-not-allowed">
                                 Max Amount
                             </button>
                         </div>
