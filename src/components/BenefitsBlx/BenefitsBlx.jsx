@@ -41,7 +41,7 @@ export const BenefitsBlx = () => {
                                 </div>
                             </div>
 
-                            <div className=" rounded-full absolute bottom-0 right-0 shrink-0 ">
+                            <div className=" w-[50%] md:w-auto rounded-full absolute bottom-0 right-0 shrink-0 ">
                                 <Image src="/images/blxcut.png" alt="1" width={300} height={300} />
                             </div>
                         </div>
