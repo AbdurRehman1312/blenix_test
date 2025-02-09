@@ -122,6 +122,13 @@
     background: linear-gradient(270deg, #FD5A01 0%, #FB9E13 100%);
   }
 
+  .bg_gradient10 {
+    background: linear-gradient(90deg, #E65C00 0%, #F37335 100%);
+  }
+
+  .bg_gradient11 {
+    background: linear-gradient(180deg, #FE5900 0%, #F9D423 100%);
+  }
 
   .orange_shadow {
     filter: drop-shadow(0px 0px 30px rgb(254, 89, 0));

@@ -1,4 +1,6 @@
+import { BenefitsBlx } from "@/components/BenefitsBlx/BenefitsBlx"
 import { LatestBuys } from "@/components/LatestBuys/LatestBuys"
+import { NewCrypto } from "@/components/NewCrypto/NewCrypto"
 import PreSaleHero from "@/components/PreSaleHero/PreSaleHero"
 
 const Presale = () => {
@@ -6,6 +8,8 @@ const Presale = () => {
         <main className=''>
             <PreSaleHero />
             <LatestBuys />
+            <BenefitsBlx />
+            <NewCrypto  />
         </main>
     )
 }
