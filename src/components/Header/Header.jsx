@@ -59,7 +59,7 @@ const Header = () => {
                     <div className="flex items-center gap-x-8">
                         <Logo src="/images/logo.png" alt="Logo" width={100} height={100} />
                     </div>
-                    <div className="lg:flex items-center gap-x-12 hidden">
+                    <div className="lg:flex items-center gap-x-12 hidden xl:text-base text-sm">
                         {isPreSale && !isScrolled && (
                             <div className="bg-custom-orange h-[50px] z-[-1] filter_blur rounded-[10px] w-[60%] absolute inset-x-[20%]" />
                         )}
