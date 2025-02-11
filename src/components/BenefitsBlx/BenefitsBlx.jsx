@@ -9,7 +9,7 @@ export const BenefitsBlx = () => {
                 <div className="mt-10 lg:mt-20 relative">
 
                     <div className="flex items-stretch flex-wrap justify-between gap-y-10  overflow-hidden mx-auto"  >
-                        <div className="w-full bg_gradient10 lg:w-[50%] xl:w-[55%] min-h-[30vh]  rounded-[40px] p-7 lg:p-10  overflow-hidden">
+                        <div className="w-full bg_glass lg:w-[50%] xl:w-[55%] min-h-[30vh]  rounded-[40px] p-7 lg:p-10  overflow-hidden">
                             <div className="space-y-7">
                                 <div className="w-[55px] h-[55px] rounded-full p-1 flex justify-center items-center border border-[#ff9b65] hover:animate-pulse">
                                     <div className="w-[45px] h-[45px] bg-[#252526] rounded-full p-2 flex shrink-0 justify-center items-center">
@@ -71,7 +71,7 @@ export const BenefitsBlx = () => {
                             </div>
 
                         </div>
-                        <div className="w-full lg:w-[48%] xl:w-[42%] min-h-[30vh] bg_gradient10 rounded-[40px] p-7 lg:p-10 relative overflow-hidden md:flex-row flex-col">
+                        <div className="w-full lg:w-[48%] xl:w-[42%] min-h-[30vh] bg_glass rounded-[40px] p-7 lg:p-10 relative overflow-hidden md:flex-row flex-col">
                             <div className=" w-[50%] md:w-auto absolute bottom-0 left-0 shrink-0 z-0">
                                 <Image src="/images/shieldcut.png" alt="1" width={300} height={300} />
                             </div>

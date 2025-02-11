@@ -26,7 +26,7 @@ const Header = () => {
     const [toggle, setToggle] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const pathname = usePathname();
-    const isPreSale = ["/presale", "/about-us"].some(route => pathname.includes(route));
+    const isPreSale = ["/presale", "/about-us", "/ecosystem"].some(route => pathname.includes(route));
     const scrollToTop = () => window.scrollTo({ top: 0 });
 
     useEffect(() => {
@@ -43,6 +43,7 @@ const Header = () => {
         { name: "Home", href: "/" },
         { name: "BLX Token", href: "/blx-token", disabled: false },
         { name: "Presale", href: "/presale", disabled: false },
+        { name: "Ecosystem", href: "/ecosystem", disabled: false },
         { name: "About Us", href: "/about-us", disabled: false },
         { name: "Join Waitlist", href: "#waitlist" },
     ].map(({ name, href, disabled, onClick }) => (
