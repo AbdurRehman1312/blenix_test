@@ -251,9 +251,3 @@
   height: 1px;
   border-top: 2px dashed #FF752A;
 }
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container_dot {
-    width: 80% !important;
-  }
-}

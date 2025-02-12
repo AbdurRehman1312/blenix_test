@@ -1,6 +1,52 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import { useEffect, useRef } from 'react'
+import gsap from "gsap";
+import { useIntersection } from "react-use";
 export const BenefitsBlx = () => {
+    const sectionRef = useRef(null);
+    const intersection = useIntersection(sectionRef, {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.4,
+    });
+
+    useEffect(() => {
+        const textElements = Array.from(sectionRef.current.children);
+
+        const fadeIn = () => {
+            gsap.to(textElements, {
+                duration: 1.4,
+                opacity: 1,
+                scale: 1,
+                y: 0,
+                ease: "power4.out",
+                stagger: {
+                    amount: 0.3,
+                },
+            });
+        };
+
+        const fadeOut = () => {
+            gsap.to(textElements, {
+                duration: 1.4,
+                opacity: 0,
+                y: "100%",
+                scale: 0.1,
+                ease: "power4.out",
+                stagger: {
+                    amount: 0.3,
+                },
+            });
+        };
+
+        if (intersection && intersection.intersectionRatio >= 0.4) {
+            fadeIn();
+        } else {
+            fadeOut();
+        }
+    }, [intersection]);
     return (
         <>
             <section className='w-[95%] lg:w-[85%] relative mx-auto my-16'>
@@ -8,7 +54,7 @@ export const BenefitsBlx = () => {
                 <h1 className='text-white text-2xl lg:text-4xl text-center font-medium my-5'>Benefits of owning $BLX</h1>
                 <div className="mt-10 lg:mt-20 relative">
 
-                    <div className="flex items-stretch flex-wrap justify-between gap-y-10  overflow-hidden mx-auto"  >
+                    <div className="flex items-stretch flex-wrap justify-between gap-y-10  overflow-hidden mx-auto"  ref={sectionRef}>
                         <div className="w-full bg_glass lg:w-[50%] xl:w-[55%] min-h-[30vh]  rounded-[40px] p-7 lg:p-10  overflow-hidden">
                             <div className="space-y-7">
                                 <div className="w-[55px] h-[55px] rounded-full p-1 flex justify-center items-center bg_gradient10 orange_shadow hover:animate-pulse">
