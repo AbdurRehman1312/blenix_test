@@ -3,7 +3,7 @@ import Image from 'next/image'
 export const FutureEcosystem = () => {
     return (
         <>
-            <section className='w-[95%] lg:w-[80%] mx-auto mt-10 pb-10'>
+            <section className='w-[95%] lg:w-[85%] mx-auto mt-10 pb-10'>
                 <div className="flex flex-col items-center gap-y-10">
                     <h3 className="text-gradient text-xl font-medium">Future Ecosystem</h3>
                     <h1 className='text-white text-2xl lg:text-4xl font-medium text-center'>Expanding the Boundaries of Innovation</h1>
@@ -125,7 +125,7 @@ export const FutureEcosystem = () => {
                     </div>
                     <div className='w-full md:w-[48%] lg:w-[23%] xl:w-[19%] group relative'>
 
-                        <div className="w-full  h-full bg-[#1D1D1D] rounded-[20px] py-8 px-2 flex flex-col justify-center gap-y-3 items-center group-hover:opacity-0 transition-opacity duration-300">
+                        <div className="w-full  h-full bg-[#1D1D1D] rounded-[20px] py-8 px-3 flex flex-col justify-center gap-y-3 items-center group-hover:opacity-0 transition-opacity duration-300">
                             <div className="w-[55px] h-[55px] rounded-full p-2 flex justify-center items-center border border-[#676767]  hover:animate-pulse">
                                 <div className="w-[46px] h-[47px] bg-[#3a3a3a] rounded-full p-2 flex shrink-0 justify-center items-center">
                                     <Image src="/icons/game.png" alt="code" width={50} height={50} />

@@ -10,7 +10,7 @@ import Image from 'next/image'
 export const UpcomingEcosystem = () => {
     return (
         <>
-            <section className='w-[95%] lg:w-[80%] mx-auto relative pb-10'>
+            <section className='w-[95%] lg:w-[85%] mx-auto relative pb-10'>
                 <div className="bg-custom-orange h-[100px] w-[100px] lg:h-[220px] lg:w-[320px] z-[-1] filter_blur2 rounded-full absolute left-[37%] top-[50%]" />
                 <div className="flex flex-col items-center gap-y-10">
                     <h3 className="text-gradient text-xl font-medium">Upcoming Ecosystem</h3>
