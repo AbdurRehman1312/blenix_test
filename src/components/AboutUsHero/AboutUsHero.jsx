@@ -7,7 +7,7 @@ const AboutUsHero = () => {
             <h1 className="text-4xl lg:text-5xl font-medium text-gradient">Built on Vision, Engineered for the Future</h1>
             <p className="text-white font-semibold text-lg">Blenix Chain is a result of cutting-edge research and real-world expertise, built by a team dedicated to driving the future of advanced technology.</p>
             <Button variant="outline" className="w-[80%] lg:w-[30%] bg_gradient4">
-                Explore Blenex Chain Today
+                Explore Blenix Chain Today
             </Button>
         </section>
     )

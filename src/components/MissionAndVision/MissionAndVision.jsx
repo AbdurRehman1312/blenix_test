@@ -66,8 +66,8 @@ const MissionAndVision = () => {
                 </div>
                 <div className="w-full md:w-[50%] space-y-8 overflow-x-hidden" ref={sectionRef}>
                     <h3 className="text-gradient lg:text-lg font-medium">Our Vision</h3>
-                    <h1 className='text-white text-2xl lg:text-4xl font-medium'>A Future Powered by Innovatione</h1>
-                    <p className="text-white/75 lg:text-lg font-light">We envision a world where advanced technologies seamlessly integrate into digital ecosystems. From AIpowered automation to decentralized infrastructure, our goal is to develop groundbreaking solutions that redefine the way people interact with technology</p>
+                    <h1 className='text-white text-2xl lg:text-4xl font-medium'>A Future Powered by Innovation</h1>
+                    <p className="text-white/75 lg:text-lg font-light">We envision a world where advanced technologies seamlessly integrate into digital ecosystems. From AI-powered automation to decentralized infrastructure, our goal is to develop groundbreaking solutions that redefine the way people interact with technology</p>
                 </div>
             </div>
         </section>
