@@ -6,6 +6,7 @@ import { useIntersection } from 'react-use'
 import { Button } from '../ui/button'
 import { ChevronLast, ChevronRight } from 'lucide-react'
 import {
+    ResponsiveTooltip,
     Tooltip,
     TooltipContent,
     TooltipProvider,
@@ -107,7 +108,7 @@ const Possibilities = () => {
                         <h1 className="text-white text-xl lg:text-4xl font-bold">How Can Blenix Supercharge Your Vision?</h1>
                         <p className="mt-5 text-white/70 lg:text-xl">Empower innovation with a blockchain built for impact.</p>
                     </div>
-                    <div className="w-full lg:w-[55%] flex flex-wrap gap-10 justify-between text-start">
+                    <div className="w-full lg:w-[55%] hidden lg:flex flex-wrap gap-10 justify-between text-start">
                         <TooltipProvider>
                             <Tooltip>
                                 <TooltipTrigger><h1 className="text-white/70 text-lg lg:text-2xl font-semibold underline">Smart Contracts</h1></TooltipTrigger>
@@ -146,6 +147,22 @@ const Possibilities = () => {
                                 </TooltipContent>
                             </Tooltip>
                         </TooltipProvider>
+                    </div>
+                    <div className="w-full lg:w-[55%] lg:hidden flex flex-wrap gap-10 justify-between text-start">
+                        <ResponsiveTooltip content={<p>Automate complex workflows to save time, resources, and storage by leveraging secure and decentralized systems.</p>}>
+                            <h1 className="text-white/70 text-lg lg:text-2xl font-semibold underline">
+                                Smart Contracts
+                            </h1>
+                        </ResponsiveTooltip>
+                        <ResponsiveTooltip content={<p>Digitize sustainability efforts backed by real-time Proof of Reserve.</p>}>
+                            <h1 className="text-white/70 text-lg lg:text-2xl font-semibold underline">Environmental Tokenization</h1>
+                        </ResponsiveTooltip>
+                        <ResponsiveTooltip content={<p>Enable transparent, tamper-proof voting systems for organizations while securely storing records on a decentralized network for auditability and trust.</p>}>
+                            <h1 className="text-white/70 text-lg lg:text-2xl font-semibold underline">Decentralized Governance</h1>
+                        </ResponsiveTooltip>
+                        <ResponsiveTooltip content={<p>Process secure, instant transactions that reduce costs and complexity.</p>}>
+                            <h1 className="text-white/70 text-lg lg:text-2xl font-semibold underline">Frictionless Payments</h1>
+                        </ResponsiveTooltip>
                     </div>
                 </div>
             </section>
