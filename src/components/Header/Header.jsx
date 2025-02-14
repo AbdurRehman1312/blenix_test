@@ -39,13 +39,19 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const handleJoinWaitlist = () => {
+        // Navigate to homepage and scroll to the #waitlist section
+        window.location.href = "/#waitlist"; // This will scroll to #waitlist on the homepage
+    };
+
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "BLX Token", href: "/blx-token", disabled: false },
-        { name: "Presale", href: "/presale", disabled: false },
+        { name: "Presale", href: "/presale", disabled: true }, // Disabled the presale link for now
         { name: "Ecosystem", href: "/ecosystem", disabled: false },
         { name: "About Us", href: "/about-us", disabled: false },
-        { name: "Join Waitlist", href: "#waitlist" },
+        { name: "Join Waitlist", href: "#waitlist", onClick: handleJoinWaitlist }, // Updated to navigate to homepage and scroll to waitlist
     ].map(({ name, href, disabled, onClick }) => (
         <NavLink href={href} key={name} disabled={disabled} onClick={() => { setToggle(false); if (onClick) onClick(); }}>
             {name}
@@ -72,7 +78,6 @@ const Header = () => {
             </header>
 
             <header className={`fixed top-0 w-full z-[30] ${isScrolled ? 'bg_glass3 transition-all duration-300 ease-in-out' : ''} ${toggle ? 'hidden' : 'block'}`}>
-                {/* <div className="bg-custom-orange h-[70px] z-[-1] filter_blur rounded-[10px] w-[80%] absolute inset-x-[10%]" /> */}
                 <div className="flex w-[95%] mx-auto py-4 relative items-center justify-between lg:hidden">
                     <Logo src="/images/logo.png" alt="logo" width={70} height={70} onClick={scrollToTop} />
                     <button className='flex-1 flex justify-end' onClick={() => setToggle(true)}>

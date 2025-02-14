@@ -39,7 +39,7 @@ const Connect = () => {
     return (
         <>
             <Toaster position="top-center" reverseOrder={false} />
-            <section className='w-[95%] lg:w-[80%] mx-auto relative py-10'>
+            <section className='w-[95%] lg:w-[80%] mx-auto relative py-10' id="waitlist">
                 <div className="flex flex-col items-center gap-y-10">
                     <h3 className="text-gradient text-xl font-medium">Connect</h3>
                     <h1 className='text-white text-2xl lg:text-4xl font-medium text-center'>Stay Updated—Get Exclusive Blenix Updates</h1>
@@ -54,9 +54,9 @@ const Connect = () => {
                         </button>
                     </form>
                     <p className="text-white font-medium lg:text-lg text-center w-full lg:w-[70%]">Join our official Telegram group now!</p>
-                    <button className="flex bg-custom-orange items-center gap-x-3 justify-center text-white h-10 w-[80%] md:w-[25%] lg:w-[15%] rounded-[10px]">
+                    <a href='http://t.me/blenixchain' target='_blank' className="flex bg-custom-orange items-center gap-x-3 justify-center text-white h-10 w-[80%] md:w-[25%] lg:w-[15%] rounded-[10px]">
                         <span>Join telegram</span>
-                    </button>
+                    </a>
                 </div>
             </section>
         </>
