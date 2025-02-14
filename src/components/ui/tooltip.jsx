@@ -16,7 +16,7 @@ const TooltipContent = React.forwardRef(
         sideOffset={sideOffset}
         side="bottom"
         className={cn(
-          "z-50 overflow-hidden rounded-md bg_glass text-white px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 max-w-[97vw] lg:max-w-auto",
+          "z-50 overflow-hidden rounded-md bg_glass text-white px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 max-w-[97vw] mx-2 lg:max-w-auto",
           className
         )}
         {...props}
@@ -29,7 +29,9 @@ TooltipContent.displayName = TooltipPrimitive.Content.displayName;
 const ResponsiveTooltip = ({ children, content }) => {
   const [isMobile, setIsMobile] = React.useState(false);
   const [open, setOpen] = React.useState(false);
+  const timeoutRef = React.useRef(null); // Prevent flickering
 
+  // Detect if screen is mobile
   React.useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 1024); // Mobile when width < 1024px
@@ -40,16 +42,35 @@ const ResponsiveTooltip = ({ children, content }) => {
     return () => window.removeEventListener("resize", checkScreenSize);
   }, []);
 
+  const handleClick = (e) => {
+    e.preventDefault(); // Prevent default tooltip behavior on mobile
+
+    if (!isMobile) return; // Only allow toggle on mobile
+
+    // Clear any existing timeout
+    clearTimeout(timeoutRef.current);
+
+    // Add slight delay to prevent flickering
+    timeoutRef.current = setTimeout(() => {
+      setOpen((prev) => !prev);
+    }, 100);
+  };
+
   return (
-    <TooltipProvider>
+    <TooltipProvider delayDuration={isMobile ? 0 : 300}>
       <Tooltip open={isMobile ? open : undefined} onOpenChange={isMobile ? setOpen : undefined}>
         <TooltipTrigger
-          onClick={isMobile ? () => setOpen((prev) => !prev) : undefined}
+          onClick={handleClick}
           className="cursor-pointer"
+          asChild // Ensures Radix Tooltip doesn't override events
         >
-          {children}
+          <span>{children}</span>
         </TooltipTrigger>
-        <TooltipContent>{content}</TooltipContent>
+        {isMobile ? (
+          open && <TooltipContent>{content}</TooltipContent>
+        ) : (
+          <TooltipContent>{content}</TooltipContent>
+        )}
       </Tooltip>
     </TooltipProvider>
   );
