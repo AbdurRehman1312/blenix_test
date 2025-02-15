@@ -149,6 +149,10 @@
     filter: drop-shadow(10px 50px 20px #000000A3);
   }
 
+  .blx_shadow3 {
+    filter: drop-shadow(15px 15px 15px #000000A3);
+  }
+
   @-webkit-keyframes slide-top {
     0% {
       -webkit-transform: translateX(100px);

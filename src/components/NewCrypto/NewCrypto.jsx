@@ -5,8 +5,8 @@ import Image from 'next/image'
 export const NewCrypto = () => {
     return (
         <section className='w-[95%] lg:w-[80%] mx-auto mt-20 bg_glass rounded-[40px] px-5 py-10 lg:px-10 lg:py-24 flex justify-between items-center md:flex-row flex-col gap-y-10  relative'>
-            <div className="w-full md:w-[45%] flex justify-center">
-                <Image src="/images/blx.png" alt="BLX" width={370} height={370} className='blx_shadow2 lg:absolute md:top-[10px] lg:top-[60px] xl:top-[30px] bounce-animation lg:scale-110 md:pb-10' />
+            <div className="w-full md:w-[45%]  flex justify-center">
+                <Image src="/images/newblx.png" alt="BLX" width={427} height={427} className=' lg:absolute md:top-[10px] lg:top-[80px] xl:top-[50px] bounce-animation lg:scale-110 md:pb-10' />
             </div>
             <div className="w-full md:w-[45%] space-y-5">
                 <span className="text-white lg:text-lg" >New</span>
