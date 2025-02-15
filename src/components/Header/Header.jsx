@@ -9,7 +9,7 @@ const NavLink = ({ href, children, onClick, disabled }) => {
     return (
         <span
             onClick={disabled ? undefined : onClick}
-            className={`text-white hover:text-custom-gold ${disabled ? "cursor-not-allowed text-gray-400" : "cursor-pointer"}`}
+            className={`text-white text-sm hover:text-custom-gold ${disabled ? "cursor-not-allowed text-gray-400" : "cursor-pointer"}`}
         >
             {disabled ? children : <Link href={href}>{children}</Link>}
         </span>

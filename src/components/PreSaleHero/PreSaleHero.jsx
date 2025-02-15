@@ -51,7 +51,7 @@ const PreSaleHero = ({ currentPage }) => {
             <div className="flex flex-col items-center w-full md:w-[40%]" ref={sectionRef}>
                 <h1 className="text-2xl lg:text-4xl text-white font-medium">Shape the Future of Finance, Be DeFiant</h1>
                 <p className="text-white/75 md:text-lg my-5">Blinex empowers your investments with blockchain-backed, real-world assets.</p>
-                <Image src="/images/blx.png" alt="community" width={350} height={350} className='blx_shadow animate-pulse mt-5 md:mt-20' />
+                <Image src="/images/blx.png" alt="community" width={400} height={400} className='blx_shadow animate-pulse mt-5 md:mt-20' />
             </div>
             <div className="flex flex-col w-full md:w-[55%] items-start bg-[#33373a] rounded-[40px] p-7">
                 <h1 className='text-white text-2xl lg:text-4xl text-center font-medium my-5'>Buy <span className='text-gradient3 '>$BLX</span> Token</h1>
@@ -82,71 +82,71 @@ const PreSaleHero = ({ currentPage }) => {
                     </TabsList>
                     <TabsContent value="usdt">
                         <div className="flex items-center justify-between w-full   p-2 rounded-lg border border-[#595959] mt-7">
-                        <div className='flex items-center'>
-                        <Image src="/images/usdt.png" alt="community" width={25} height={25} className='me-1' />
-                            <input
-                                type="text"
-                                placeholder="0.00"
-                                // value={amount}
-                                // onChange={(e) => setAmount(e.target.value)}
-                                className=" w-[50%] bg-transparent text-white text-lg px-2 outline-none"
-                            />
-                        </div>
-                        
+                            <div className='flex items-center'>
+                                <Image src="/images/usdt.png" alt="community" width={25} height={25} className='me-1' />
+                                <input
+                                    type="text"
+                                    placeholder="0.00"
+                                    // value={amount}
+                                    // onChange={(e) => setAmount(e.target.value)}
+                                    className=" w-[50%] bg-transparent text-white text-lg px-2 outline-none"
+                                />
+                            </div>
+
                             <button className="bg-[#595959] w-[50%] md:w-[50%] lg:w-[35%] xl:w-[25%] text-[#858688] px-5 py-2 rounded-lg text-sm md:text-md cursor-not-allowed">
                                 Max Amount
                             </button>
                         </div>
                     </TabsContent>
                     <TabsContent value="usdc">
-                    <div className="flex items-center justify-between w-full   p-2 rounded-lg border border-[#595959] mt-7">
-                        <div className='flex items-center'>
-                        <Image src="/images/usdc.png" alt="community" width={25} height={25} className='me-1' />
-                            <input
-                                type="text"
-                                placeholder="0.00"
-                                // value={amount}
-                                // onChange={(e) => setAmount(e.target.value)}
-                                className=" w-[50%] bg-transparent text-white text-lg px-2 outline-none"
-                            />
-                        </div>
-                        
+                        <div className="flex items-center justify-between w-full   p-2 rounded-lg border border-[#595959] mt-7">
+                            <div className='flex items-center'>
+                                <Image src="/images/usdc.png" alt="community" width={25} height={25} className='me-1' />
+                                <input
+                                    type="text"
+                                    placeholder="0.00"
+                                    // value={amount}
+                                    // onChange={(e) => setAmount(e.target.value)}
+                                    className=" w-[50%] bg-transparent text-white text-lg px-2 outline-none"
+                                />
+                            </div>
+
                             <button className="bg-[#595959] w-[50%] md:w-[50%] lg:w-[35%] xl:w-[25%] text-[#858688] px-5 py-2 rounded-lg text-sm md:text-md cursor-not-allowed">
                                 Max Amount
                             </button>
                         </div>
                     </TabsContent>
                     <TabsContent value="usdct">
-                    <div className="flex items-center justify-between w-full   p-2 rounded-lg border border-[#595959] mt-7">
-                        <div className='flex items-center'>
-                        <Image src="/images/usdct.png" alt="community" width={25} height={25} className='me-1' />
-                            <input
-                                type="text"
-                                placeholder="0.00"
-                                // value={amount}
-                                // onChange={(e) => setAmount(e.target.value)}
-                                className=" w-[50%] bg-transparent text-white text-lg px-2 outline-none"
-                            />
-                        </div>
-                        
+                        <div className="flex items-center justify-between w-full   p-2 rounded-lg border border-[#595959] mt-7">
+                            <div className='flex items-center'>
+                                <Image src="/images/usdct.png" alt="community" width={25} height={25} className='me-1' />
+                                <input
+                                    type="text"
+                                    placeholder="0.00"
+                                    // value={amount}
+                                    // onChange={(e) => setAmount(e.target.value)}
+                                    className=" w-[50%] bg-transparent text-white text-lg px-2 outline-none"
+                                />
+                            </div>
+
                             <button className="bg-[#595959] w-[50%] md:w-[50%] lg:w-[35%] xl:w-[25%] text-[#858688] px-5 py-2 rounded-lg text-sm md:text-md cursor-not-allowed">
                                 Max Amount
                             </button>
                         </div>
                     </TabsContent>
                     <TabsContent value="btc">
-                    <div className="flex items-center justify-between w-full   p-2 rounded-lg border border-[#595959] mt-7">
-                        <div className='flex items-center'>
-                        <Image src="/images/btc.png" alt="community" width={25} height={25} className='me-1' />
-                            <input
-                                type="text"
-                                placeholder="0.00"
-                                // value={amount}
-                                // onChange={(e) => setAmount(e.target.value)}
-                                className=" w-[50%] bg-transparent text-white text-lg px-2 outline-none"
-                            />
-                        </div>
-                        
+                        <div className="flex items-center justify-between w-full   p-2 rounded-lg border border-[#595959] mt-7">
+                            <div className='flex items-center'>
+                                <Image src="/images/btc.png" alt="community" width={25} height={25} className='me-1' />
+                                <input
+                                    type="text"
+                                    placeholder="0.00"
+                                    // value={amount}
+                                    // onChange={(e) => setAmount(e.target.value)}
+                                    className=" w-[50%] bg-transparent text-white text-lg px-2 outline-none"
+                                />
+                            </div>
+
                             <button className="bg-[#595959] w-[50%] md:w-[50%] lg:w-[35%] xl:w-[25%] text-[#858688] px-5 py-2 rounded-lg text-sm md:text-md cursor-not-allowed">
                                 Max Amount
                             </button>
@@ -165,11 +165,11 @@ const PreSaleHero = ({ currentPage }) => {
 
                 <div className='w-full mt-7 flex  justify-between'>
                     <Button variant="outline" className="w-[48%] bg_gradient9 rounded-2xl py-8 md:text-lg  ">
-                    Connect Wallet
-                            </Button>
-                            <button className=" border border-[#FD5A01] text-[#FD5A01]  w-[48%] rounded-2xl md:text-lg">
-                                Max Amount
-                            </button>
+                        Connect Wallet
+                    </Button>
+                    <button className=" border border-[#FD5A01] text-[#FD5A01]  w-[48%] rounded-2xl md:text-lg">
+                        Max Amount
+                    </button>
                 </div>
                 <div className='flex justify-center flex-col items-center w-[100%] mt-5 mb-1'>
                     <p className='text-white text-sm md:text-md '>Don't have a wallet? <Link href="https://www.worldlibertyfinancial.com/intl/web3-wallets" target='_blank' className='text-[#FD5A01]'>Learn more</Link></p>

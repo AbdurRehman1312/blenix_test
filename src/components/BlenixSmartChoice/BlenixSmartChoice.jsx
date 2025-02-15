@@ -102,7 +102,7 @@ const BlenixSmartChoice = () => {
                 </div>
                 <div className="lg:w-[30%] w-full overflow-hidden">
                     <div className="flex justify-center">
-                        <Image src="/images/blxsmart.png" className='animate-rotate' alt="phone" width={300} height={300} />
+                        <Image src="/images/coinbronze.png" className='animate-rotate' alt="phone" width={350} height={350} />
                     </div>
                     <div className="flex flex-col gap-y-4 mt-5">
                         <div className="p-5 min-h-[23vh] lg:min-h-[18vh] flex items-center gap-x-4 bg-dark-gray rounded-[20px]">
@@ -113,7 +113,7 @@ const BlenixSmartChoice = () => {
                                 <h1 className="text-lg text-white">
                                     Amount Invested
                                 </h1>
-                                <p className="text-white/70 font-extralight text-sm">Easily adjust your investment amount and instantly see how many BLX tokens you’ll receive.</p>
+                                <p className="text-white/70 font-extralight text-sm">                                Easily adjust your investment amount and instantly see how many BLX tokens you’ll receive.</p>
                             </div>
                         </div>
                         <div className="p-5 min-h-[23vh] lg:min-h-[18vh] flex items-center gap-x-4 bg-dark-gray rounded-[20px]">
@@ -124,18 +124,7 @@ const BlenixSmartChoice = () => {
                                 <h1 className="text-lg text-white">
                                     Expected BLX Price
                                 </h1>
-                                <p className="text-white/70 font-extralight text-sm">Projected token value based on platform adoption and market growth.</p>
-                            </div>
-                        </div>
-                        <div className="p-5 min-h-[23vh] lg:min-h-[18vh] flex items-center gap-x-4 bg-dark-gray rounded-[20px]">
-                            <div className="bg-white rounded-full p-2 h-[40px] w-[40px] shrink-0">
-                                <Image src="/icons/dollar.png" alt="coin" width={40} height={40} />
-                            </div>
-                            <div className="">
-                                <h1 className="text-lg text-white">
-                                    Ethereum Price Integration:
-                                </h1>
-                                <p className="text-white/70 font-extralight text-sm">                                Align your forecasts with current Ethereum trends for accurate projections.</p>
+                                <p className="text-white/70 font-extralight text-sm">                                Projected token value based on platform adoption and market growth.</p>
                             </div>
                         </div>
                         <div className="p-5 min-h-[23vh] lg:min-h-[18vh] flex items-center gap-x-4 bg-dark-gray rounded-[20px]">
@@ -144,9 +133,9 @@ const BlenixSmartChoice = () => {
                             </div>
                             <div className="">
                                 <h1 className="text-lg text-white">
-                                    Calculation Time:
+                                    Calculation Time
                                 </h1>
-                                <p className="text-white/70 font-extralight text-sm">Customize your timeline and see how your returns evolve with the market.</p>
+                                <p className="text-white/70 font-extralight text-sm">                                Customize your timeline and see how your returns evolve with the market.</p>
                             </div>
                         </div>
                     </div>

@@ -22,8 +22,8 @@ export const UpcomingEcosystem = () => {
                     <div className="flex justify-between items-center">
                         <h1 className='text-white text-2xl lg:text-4xl font-medium text-center'>Ecosystem</h1>
                         <div>
-                            <CarouselPrevious className=" bg-[#FE5900]" />
-                            <CarouselNext className="ml-3 bg-[#FE5900]" />
+                            <CarouselPrevious className=" bg-custom-orange" style={"text-white"} />
+                            <CarouselNext className="ml-3 bg-custom-orange" style={"text-white"} />
                         </div>
                     </div>
                     <div className='bg-[#555453] py-7 px-5 rounded-[40px] mt-4'>
