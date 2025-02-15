@@ -61,7 +61,7 @@ const Footer = () => {
                             <li>
                                 <Link href="/blx-token" className="hover:text-gray-300">BLX Token</Link>
                             </li>
-                            <li className="text-gray-400 cursor-not-allowed">Presale</li>
+                            {/* <li className="text-gray-400 cursor-not-allowed">Presale</li> */}
                             <li>
                                 <Link href="/ecosystem" className="hover:text-gray-300">Ecosystem</Link>
                             </li>

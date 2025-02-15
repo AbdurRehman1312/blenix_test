@@ -48,7 +48,7 @@ const Header = () => {
     const navLinks = [
         { name: "Home", href: "/" },
         { name: "BLX Token", href: "/blx-token", disabled: false },
-        { name: "Presale", href: "/presale", disabled: true }, // Disabled the presale link for now
+        // { name: "Presale", href: "/presale", disabled: true },
         { name: "Ecosystem", href: "/ecosystem", disabled: false },
         { name: "About Us", href: "/about-us", disabled: false },
         { name: "Join Waitlist", href: "#waitlist", onClick: handleJoinWaitlist }, // Updated to navigate to homepage and scroll to waitlist
